@@ -2,13 +2,13 @@ settings:
   title: 'OpenTunnel.net - Server Status'
   url: 'https://status.opentunnel.net' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 30 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
   notAllmonitorsOperational: 'Not All Systems Operational'
   monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
+  monitorLabelNotOperational: 'Unstable or Not Operational'
   monitorLabelNoData: 'No data'
   dayInHistogramNoData: 'No data'
   dayInHistogramOperational: 'All good'
@@ -22,7 +22,7 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
-	
+
   - id: Community # unique identifier
     name: Community (forum.opentunnel.net)
     description: 'Community Server' # default=empty
@@ -30,7 +30,7 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
-	
+
   - id: VIP Panel # unique identifier
     name: VIP Panel (vip.opentunnel.net)
     description: 'VIP Panel Server' # default=empty
@@ -38,7 +38,7 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
-	
+
   - id: SSH Singapore SGP 1 # unique identifier
     name: SSH Singapore SGP 1 (sg-1.opentunnel.net)
     description: 'SSH Server' # default=empty
