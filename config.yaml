@@ -15,6 +15,30 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
+  - id: Main Web # unique identifier
+    name: Main Web (opentunnel.net)
+    description: 'Main Web Server' # default=empty
+    url: 'https://opentunnel.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+	
+  - id: Community # unique identifier
+    name: Community (forum.opentunnel.net)
+    description: 'Community Server' # default=empty
+    url: 'https://forum.opentunnel.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+	
+  - id: VIP Panel # unique identifier
+    name: VIP Panel (vip.opentunnel.net)
+    description: 'VIP Panel Server' # default=empty
+    url: 'https://vip.opentunnel.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+	
   - id: SSH Singapore SGP 1 # unique identifier
     name: SSH Singapore SGP 1 (sg-1.opentunnel.net)
     description: 'SSH Server' # default=empty
