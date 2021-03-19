@@ -1,6 +1,6 @@
 settings:
-  title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  title: 'OpenTunnel.net - Server Status'
+  url: 'https://status.opentunnel.net' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -15,23 +15,299 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: SSH Singapore SGP 1 # unique identifier
+    name: sg-1.opentunnel.net
+    description: 'SSH' # default=empty
+    url: 'http://sg-1.opentunnel.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 400 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: SSH United States USA 1 # unique identifier
+    name: us-1.opentunnel.net
+    description: 'SSH' # default=empty
+    url: 'http://us-1.opentunnel.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 400 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: SSH Singapore SGS 1 # unique identifier
+    name: sggs-1.opentunnel.net
+    description: 'SSH' # default=empty
+    url: 'http://sggs-1.opentunnel.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 400 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: SSH Germany DE 1 # unique identifier
+    name: de-1.opentunnel.net
+    description: 'SSH' # default=empty
+    url: 'http://de-1.opentunnel.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 400 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: SSH Singapore SGP 2 # unique identifier
+    name: sg-2.opentunnel.net
+    description: 'SSH' # default=empty
+    url: 'http://sg-2.opentunnel.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 400 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: SSH Indonesia ID 1 # unique identifier
+    name: id-1.opentunnel.net
+    description: 'SSH' # default=empty
+    url: 'http://id-1.opentunnel.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 400 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: SSH Singapore SGL 1 # unique identifier
+    name: sg-3.opentunnel.net
+    description: 'SSH' # default=empty
+    url: 'http://sg-3.opentunnel.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 400 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY Singapore SGL 1 # unique identifier
+    name: sgv-1.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://sgv-1.openv2ray.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
-    method: GET
-    expectStatus: 200
+  - id: V2RAY Singapore SGP 1 # unique identifier
+    name: sgv-2.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://sgv-2.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
-    method: GET
-    expectStatus: 200
+  - id: V2RAY Indonesia IDA 1 # unique identifier
+    name: idv-1.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://idv-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY United States USA 1 # unique identifier
+    name: usv-1.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://usv-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY Singapore SGM 1 # unique identifier
+    name: sgv-3.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://sgv-3.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY Singapore SGO 1 # unique identifier
+    name: sgv-4.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://sgv-4.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY Vietnam VN 1 # unique identifier
+    name: vnv-1.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://vnv-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY Singapore SGV 1 # unique identifier
+    name: sgv-5.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://sgv-5.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY Russia RU 1 # unique identifier
+    name: ruv-1.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://ruv-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY Australia AUP 1 # unique identifier
+    name: auv-1.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://auv-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY United States USA 2 # unique identifier
+    name: usv-2.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://usv-2.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY United States USA 3 # unique identifier
+    name: usv-3.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://usv-3.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY Indonesia IDG 1 # unique identifier
+    name: idv-2.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://idv-2.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY Singapore SGO 2 # unique identifier
+    name: sgv-6.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://sgv-6.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY South Africa ZAX 1 # unique identifier
+    name: zav-1.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://zav-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY Netherlands NLB 6 # unique identifier
+    name: nlv-6.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://nlv-6.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY Netherlands NLB 1 # unique identifier
+    name: nlv-1.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://nlv-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY Germany DEH 1 # unique identifier
+    name: dev-1.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://dev-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY Germany DEH 2 # unique identifier
+    name: dev-2.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://dev-2.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY Hong Kong HKM 1 # unique identifier
+    name: hkv-1.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://hkv-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY United States USA 4 # unique identifier
+    name: usv-4.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://usv-4.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY Indonesia IDA 2 # unique identifier
+    name: idv-3.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://idv-3.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: V2RAY South Africa ZAX 2 # unique identifier
+    name: zav-2.openv2ray.com
+    description: 'V2RAY' # default=empty
+    url: 'https://zav-2.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: XRAY Singapore SGL 1 # unique identifier
+    name: sgx-1.openv2ray.com
+    description: 'XRAY' # default=empty
+    url: 'https://sgx-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: XRAY Singapore SGO 1 # unique identifier
+    name: sgx-2.openv2ray.com
+    description: 'XRAY' # default=empty
+    url: 'https://sgx-2.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: XRAY United States USA 1 # unique identifier
+    name: usx-1.openv2ray.com
+    description: 'XRAY' # default=empty
+    url: 'https://usx-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: XRAY South Africa ZAP 1 # unique identifier
+    name: zax-1.openv2ray.com
+    description: 'XRAY' # default=empty
+    url: 'https://zax-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: XRAY South Korea KRP 1 # unique identifier
+    name: krx-1.openv2ray.com
+    description: 'XRAY' # default=empty
+    url: 'https://krx-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: XRAY Netherlands NLB 1 # unique identifier
+    name: nlx-1.openv2ray.com
+    description: 'XRAY' # default=empty
+    url: 'https://nlx-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: XRAY Indonesia IDB 1 # unique identifier
+    name: idx-1.openv2ray.com
+    description: 'XRAY' # default=empty
+    url: 'https://idx-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+
