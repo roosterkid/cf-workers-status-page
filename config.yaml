@@ -334,3 +334,11 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
+
+  - id: XRAY Japan JPP 1 # unique identifier
+    name: XRAY Japan JPP 1 (jpx-1.openv2ray.com)
+    description: 'XRAY Server' # default=empty
+    url: 'https://jpx-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
