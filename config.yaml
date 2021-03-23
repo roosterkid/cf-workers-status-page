@@ -159,8 +159,8 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
 
-  - id: V2RAY Russia RU 1 # unique identifier
-    name: V2RAY Russia RU 1 (ruv-1.openv2ray.com)
+  - id: V2RAY Russia RUI 1 # unique identifier
+    name: V2RAY Russia RUI 1 (ruv-1.openv2ray.com)
     description: 'V2RAY Server' # default=empty
     url: 'https://ruv-1.openv2ray.com/' # URL to fetch
     method: GET # default=GET
