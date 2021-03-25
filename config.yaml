@@ -87,22 +87,6 @@ monitors:
     expectStatus: 400 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
 
-  - id: SSH Singapore SGL 1 # unique identifier
-    name: SSH Singapore SGL 1 (sg-3.opentunnel.net)
-    description: 'SSH Server' # default=empty
-    url: 'http://sg-3.opentunnel.net/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 400 # operational status, default=200
-    followRedirect: true # should fetch follow redirects, default=false
-
-  - id: V2RAY Singapore SGL 1 # unique identifier
-    name: V2RAY Singapore SGL 1 (sgv-1.openv2ray.com)
-    description: 'V2RAY Server' # default=empty
-    url: 'https://sgv-1.openv2ray.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: true # should fetch follow redirects, default=false
-
   - id: V2RAY Singapore SGP 1 # unique identifier
     name: V2RAY Singapore SGP 1 (sgv-2.openv2ray.com)
     description: 'V2RAY Server' # default=empty
@@ -275,14 +259,6 @@ monitors:
     name: V2RAY South Africa ZAP 2 (zav-2.openv2ray.com)
     description: 'V2RAY Server' # default=empty
     url: 'https://zav-2.openv2ray.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: true # should fetch follow redirects, default=false
-
-  - id: XRAY Singapore SGL 1 # unique identifier
-    name: XRAY Singapore SGL 1 (sgx-1.openv2ray.com)
-    description: 'XRAY Server' # default=empty
-    url: 'https://sgx-1.openv2ray.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
