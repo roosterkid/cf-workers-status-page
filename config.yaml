@@ -326,3 +326,43 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
+
+  - id: TROJAN Singapore SGV 1 # unique identifier
+    name: TROJAN Singapore SGV 1 (sgt-1.opensvr.net)
+    description: 'TROJAN Server' # default=empty
+    url: 'https://sgt-1.opensvr.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+
+  - id: TROJAN Singapore SGP 1 # unique identifier
+    name: TROJAN Singapore SGP 1 (sgt-2.opensvr.net)
+    description: 'TROJAN Server' # default=empty
+    url: 'https://sgt-2.opensvr.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+
+  - id: TROJAN Germany DEH 1 # unique identifier
+    name: TROJAN Germany DEH 1 (det-1.opensvr.net)
+    description: 'TROJAN Server' # default=empty
+    url: 'https://det-1.opensvr.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+
+  - id: TROJAN Netherlands NLB 1 # unique identifier
+    name: TROJAN Netherlands NLB 1 (nlt-1.opensvr.net)
+    description: 'TROJAN Server' # default=empty
+    url: 'https://nlt-1.opensvr.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+
+  - id: TROJAN Japan JPP 1 # unique identifier
+    name: TROJAN Japan JPP 1 (jpt-1.opensvr.net)
+    description: 'TROJAN Server' # default=empty
+    url: 'https://jpt-1.opensvr.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
