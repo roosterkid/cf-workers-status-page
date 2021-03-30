@@ -366,3 +366,11 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
+
+  - id: TROJAN United States USO 1 # unique identifier
+    name: TROJAN United States USO 1 (ust-1.opensvr.net)
+    description: 'TROJAN Server' # default=empty
+    url: 'https://ust-1.opensvr.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
