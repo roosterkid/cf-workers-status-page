@@ -398,3 +398,11 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
+
+  - id: TROJAN Singapore SGA 1 # unique identifier
+    name: TROJAN Singapore SGA 1 (sgt-3.opensvr.net)
+    description: 'TROJAN Server' # default=empty
+    url: 'https://sgt-3.opensvr.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
