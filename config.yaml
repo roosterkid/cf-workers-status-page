@@ -303,14 +303,6 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
 
-  - id: XRAY South Africa ZAP 1 # unique identifier
-    name: XRAY South Africa ZAP 1 (zax-1.openv2ray.com)
-    description: 'XRAY Server' # default=empty
-    url: 'https://zax-1.openv2ray.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: true # should fetch follow redirects, default=false
-
   - id: XRAY South Korea KRP 1 # unique identifier
     name: XRAY South Korea KRP 1 (krx-1.openv2ray.com)
     description: 'XRAY Server' # default=empty
