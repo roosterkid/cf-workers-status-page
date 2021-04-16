@@ -288,8 +288,8 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
 
-  - id: XRAY Netherlands NLB 1 # unique identifier
-    name: XRAY Netherlands NLB 1 (nlx-1.openv2ray.com)
+  - id: XRAY Netherlands NLI 1 # unique identifier
+    name: XRAY Netherlands NLI 1 (nlx-1.openv2ray.com)
     description: 'XRAY Server' # default=empty
     url: 'https://nlx-1.openv2ray.com/' # URL to fetch
     method: GET # default=GET
@@ -388,6 +388,14 @@ monitors:
     name: XRAY Singapore SGD 1 (sgx-3.openv2ray.com)
     description: 'XRAY Server' # default=empty
     url: 'https://sgx-3.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+
+  - id: XRAY India IND 1 # unique identifier
+    name: XRAY India IND 1 (inx-1.openv2ray.com)
+    description: 'XRAY Server' # default=empty
+    url: 'https://inx-1.openv2ray.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
