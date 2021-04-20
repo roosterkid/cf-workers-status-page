@@ -144,8 +144,8 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
 
-  - id: V2RAY Australia AUP 1 # unique identifier
-    name: V2RAY Australia AUP 1 (auv-1.openv2ray.com)
+  - id: V2RAY Australia AUL 1 # unique identifier
+    name: V2RAY Australia AUL 1 (auv-1.openv2ray.com)
     description: 'V2RAY Server' # default=empty
     url: 'https://auv-1.openv2ray.com/' # URL to fetch
     method: GET # default=GET
@@ -296,8 +296,8 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
 
-  - id: XRAY Indonesia IDB 1 # unique identifier
-    name: XRAY Indonesia IDB 1 (idx-1.openv2ray.com)
+  - id: XRAY Indonesia IDA 1 # unique identifier
+    name: XRAY Indonesia IDA 1 (idx-1.openv2ray.com)
     description: 'XRAY Server' # default=empty
     url: 'https://idx-1.openv2ray.com/' # URL to fetch
     method: GET # default=GET
@@ -396,6 +396,54 @@ monitors:
     name: XRAY India IND 1 (inx-1.openv2ray.com)
     description: 'XRAY Server' # default=empty
     url: 'https://inx-1.openv2ray.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+
+  - id: OVPN Singapore SGP 1 # unique identifier
+    name: OVPN Singapore SGP 1 (sgo-1.opensvr.net)
+    description: 'OVPN Server' # default=empty
+    url: 'https://sgo-1.opensvr.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+
+  - id: OVPN United States USF 1 # unique identifier
+    name: OVPN United States USF 1 (uso-1.opensvr.net)
+    description: 'OVPN Server' # default=empty
+    url: 'https://uso-1.opensvr.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+
+  - id: OVPN Singapore SGS 1 # unique identifier
+    name: OVPN Singapore SGS 1 (sgo-2.opensvr.net)
+    description: 'OVPN Server' # default=empty
+    url: 'https://sgo-2.opensvr.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+
+  - id: OVPN Germany DEH 1 # unique identifier
+    name: OVPN Germany DEH 1 (deo-1.opensvr.net)
+    description: 'OVPN Server' # default=empty
+    url: 'https://deo-1.opensvr.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+
+  - id: OVPN Australia AUP 1 # unique identifier
+    name: OVPN Australia AUP 1 (auo-1.opensvr.net)
+    description: 'OVPN Server' # default=empty
+    url: 'https://auo-1.opensvr.net/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+
+  - id: OVPN France FRO 1 # unique identifier
+    name: OVPN France FRO 1 (fro-1.opensvr.net)
+    description: 'OVPN Server' # default=empty
+    url: 'https://fro-1.opensvr.net/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
